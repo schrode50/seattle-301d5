@@ -8,13 +8,14 @@
   padding: 0 0 .2em 1em;
 }
 
-/* TODO: Add styles for the icon-menu class. It should be bigger, and off to the right. */
+/* DONE: Add styles for the icon-menu class. It should be bigger, and off to the right. */
 .icon-menu {
-
+  font-size: 40px;
+  padding-top: 20px;
 }
 
 .main-nav {
-  padding: 0.1em;
+  padding: 0.2em;
 }
 
 .main-nav ul {
@@ -30,7 +31,7 @@
 
 .main-nav li {
   margin-right: .4em;
-  font-size: 1.5em;
+  font-size: 30px;
   padding: .5em .2em;
   border-bottom: 1px solid #ccc;
 }
@@ -53,8 +54,43 @@
   text-decoration: none;
 }
 
-/* TODO: Now add styles for how things should look on a larger screen:
+#about {
+  padding-top: 12px;
+}
+
+/* DONE: Now add styles for how things should look on a larger screen:
          - Hide the hamburger.
          - Main should be all on one row, with padding spaced better for a larger screen.
          - Just, ya know, try to make it look good! */
-/* @media only screen... */
+
+@media only screen and (min-width: 640px) {
+  .site-header {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  .main-nav li {
+    display: inline-block;
+  }
+
+  .main-nav ul {
+    display: block;
+  }
+}
+
+ /*@media (min-device-width: 640px) {
+   .icon-menu {
+     display: none;
+   }
+   .main-nav ul {
+     display: flex;
+     flex-direction: row;
+     padding: 0;
+     list-style: none;
+   }
+ }*/
