@@ -1,0 +1,78 @@
+.site-header {
+  background: #FFEAAA;
+}
+
+.heading-group-h1 {
+  float: left;
+  padding: 0 0 .2em 1em;
+}
+
+.icon-menu {
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+.main-nav {
+  padding: 0.2em;
+}
+
+.main-nav ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+.main-nav:hover ul {
+  display: block;
+}
+
+.main-nav li {
+  margin-right: .4em;
+  font-size: 30px;
+  padding: .5em .2em;
+  border-bottom: 1px solid #ccc;
+}
+
+#filters {
+  padding: 0;
+  list-style: none;
+}
+
+.template {
+  display: none;
+}
+
+.byline {
+  color: #777;
+}
+
+.byline a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#about {
+  padding-top: 12px;
+}
+
+/* styles for how things should look on a desktop screen: */
+@media only screen and (min-width: 640px) {
+  .site-header {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  .main-nav li {
+    display: inline-block;
+  }
+
+  .main-nav ul {
+    display: block;
+  }
+}
