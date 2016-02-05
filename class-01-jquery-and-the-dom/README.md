@@ -26,7 +26,7 @@ Your first independent assignment can be found in the `portfolio-assignment` sub
  - jQuery "Basics" course: https://teamtreehouse.com/library/jquery-basics
 
 ## Class Videos
- - [Part 1 of 4](https://youtu.be/byHIxgQaYdU)
- - [Part 2 of 4](https://youtu.be/DR8R_saAJyQ)
- - [Part 3 of 4](https://youtu.be/_MIIx5dAMxc)
- - [Part 4 of 4](https://youtu.be/6Hn9e9zv21Y)
+ - [Part 1 of 4](https://youtu.be/AbkEswm01PA)
+ - [Part 2 of 4](https://youtu.be/ZCDZc0VIj4U)
+ - [Part 3 of 4](https://youtu.be/mZoGW1vLhws)
+ - [Part 4 of 4](https://youtu.be/40ffAGoCaTc)
