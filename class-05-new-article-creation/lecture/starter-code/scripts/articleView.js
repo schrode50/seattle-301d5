@@ -99,7 +99,7 @@ articleView.create = function() {
 
   // TODO: Activate the highlighting of any code blocks:
   ('pre code').each(function(index, block) {//use i, idx, or index to be able to find objects
-    hljs.highlightBlock(block);//pre is parent of code
+    hljs.highlightBlock(block);//pre is parent of code. working through this in class is super helpful.
   });
 
   // TODO: Export the new article as JSON, so it's ready to copy/paste into blogArticles.js:
