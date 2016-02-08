@@ -48,6 +48,21 @@ Article.fetchAll = function() {
     // When rawData is already in localStorage,
     // we can load it with the .loadAll function above,
     // and then render the index page (using the proper method on the articleView object).
+    $.ajax({
+      type: "HEAD",
+      url: 'data/hackerIpsum.json',
+      success: function(data, message, xhr) {
+        console.log(xhr);
+        var eTag = xhr.getResponseHeader('eTag');
+        if(!localStorage.eTag || eTag !== localStorage.eTag) {
+          localStorage.eTag = eTag;
+        } else {
+          Article.loadAll(JSON.parse(localStorage.rawData));
+          
+          //method that will render the index page components.
+        }
+      }
+    });
     Article.loadAll(//TODO: What do we pass in here to the .loadAll function?
     );
     articleView.someFunctionToCall; //TODO: What method do we call to render the index page?
