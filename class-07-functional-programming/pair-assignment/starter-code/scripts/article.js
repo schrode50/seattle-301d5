@@ -1,5 +1,10 @@
 // TODO: Wrap the entire contents of this file in an IIFE.
 // Pass in to the IIFE a module, upon which objects can be attached for later access.
+
+(funciton(module) {
+
+}(window));
+
 function Article (opts) {
   this.author = opts.author;
   this.authorUrl = opts.authorUrl;
@@ -53,13 +58,13 @@ Article.fetchAll = function() {
   }
 };
 
-// TODO: Chain together a `map` and a `reduce` call to get a rough count of all words in all articles.
+// DONE: Chain together a `map` and a `reduce` call to get a rough count of all words in all articles.
 Article.numWordsAll = function() {
   return Article.all.map(function(article) {
-    return // Get the total number of words in this article
+    return article.body.match(/\b\w+/g).length;
   })
   .reduce(function(a, b) {
-    return // Sum up all the values in the collection
+    return a + b;
   })
 };
 
