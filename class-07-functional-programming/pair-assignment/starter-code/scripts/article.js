@@ -1,7 +1,7 @@
 // TODO: Wrap the entire contents of this file in an IIFE.
 // Pass in to the IIFE a module, upon which objects can be attached for later access.
 
-(funciton(module) {
+(function(module) {
 
 }(window));
 
