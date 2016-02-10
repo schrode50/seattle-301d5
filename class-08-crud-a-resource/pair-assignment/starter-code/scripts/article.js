@@ -22,7 +22,10 @@
   // TODO: Set up a DB table for articles.
   Article.createTable = function(callback) {
     webDB.execute(
-      '...',
+      'CREATE TABLE IF NOT EXISTS articles(' +
+        'id INTEGER PRIMARY KEY, ' +
+        'title VARCHAR(255) NOT NULL,'
+        ');',//NEED TO FINISH THIS.
       function(result) {
         console.log('Successfully set up the articles table.', result);
         if (callback) callback();
@@ -44,8 +47,8 @@
     webDB.execute(
       [
         {
-          'sql': '...;',
-          'data': [],
+          'sql': 'INSERT INTO article (title, author, authorUrl,category, publishedOn, body) VALUES(?, ?, ?, ?, ?, ?,);',
+          'data': [this.title, this.author, this.authorUrl, this.category, this.publishedOn, this.body],
         }
       ],
       callback
